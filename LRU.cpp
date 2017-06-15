@@ -57,12 +57,12 @@ unsigned int LRU_Cache(int a[] , int n , int size){
 		++time;
 		//current page is not present in the cache
 		if(m[a[i]] == false){
-		++miss;
-		m[a[i]] = true;
-		//cout << a[i] << " " << i << '\n';
-		//Size is less than the frame size, so we can bring next page into the memory
-		if(Q.size() < size)
-			Q.push(make_pair(time , a[i]));
+			++miss;
+			m[a[i]] = true;
+			//cout << a[i] << " " << i << '\n';
+			//Size is less than the frame size, so we can bring next page into the memory
+			if(Q.size() < size)
+				Q.push(make_pair(time , a[i]));
 			//If the size of the cache is already full, Remove the least 
 			//recent used page from the table and bring the current page 
 			else{
