@@ -3,7 +3,6 @@
   MNNIT ALLAHABAD, ALLAHABAD
   ALL Rights Reserved, 
 */
-
 #include <bits/stdc++.h>
 using namespace std;
 
